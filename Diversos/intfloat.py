@@ -13,23 +13,14 @@ def leiaint(msg):
     return valor
 
 def leiafloat(msg):
-    try:
-        ok = False
-        valor = 0
-        while True:
-            n = str(input(msg))
-            if n.isinstance(float):
-                valor = float(n)
-                ok = True
-            if ok:
-              break
-            else: 
-                valor == type: str
-            
-    except (ValueError, TypeError):
-        print("porfavor digite um numero real valido")
-    except (KeyboardInterrupt):
-        print("o usuario preferiu nao digitar esse numero!")
-        
-    return valor
+    while True:
+        try:
+            valor = float(input(msg))
+            return valor
+        except (ValueError, TypeError):
+            print("porfavor digite um numero real valido")
+        except KeyboardInterrupt:
+            print("o usuario preferiu nao digitar esse numero!")
+            return 0
+
 
