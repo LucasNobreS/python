@@ -16,6 +16,7 @@ class gafanhoto:
 g1 = gafanhoto()
 g1.nome = "maria"
 g1.idade = 17
+
 g1.aniversario()
 print(g1.mensagem())
 
