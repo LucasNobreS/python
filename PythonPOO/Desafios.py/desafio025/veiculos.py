@@ -26,7 +26,7 @@ class Caminhao(Transporte):
         if self.distancia > 50:
              return self.distancia * 1.20
         else:
-             return "Para frete de caminhão a distancia minima é 50km"
+             return " frete de caminhão tem a distancia minima é 50km"
 
 
 class Drone(Transporte):
@@ -38,4 +38,4 @@ class Drone(Transporte):
         if self.distancia > 50:
             return self.distancia * 9.5
         else:
-            return "Para frete de drona a distancia maxima é 10km"
+            return " frete de drona tem a distancia maxima é 10km"
