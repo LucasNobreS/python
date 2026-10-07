@@ -1,7 +1,7 @@
 from personagem_rpg import *
 
 def main():
-    p1 = Guerreiro("Megaman", 1000)
+    p1 = Guerreiro(input("Digite o nome do personagem: "), int(input("Digite a vida do personagem: ")))
     p2 = Mago("Merlin", 5000)
     p3 = Guerreiro("Kratos", 1500)
 
